@@ -1,0 +1,124 @@
+.slider {
+    position: relative;
+    margin-top: 80px;
+    &__item {
+        width: 33%;
+    }
+    &__top {
+        background-color: #fff;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border: 2px solid #ced6af;
+    }
+    &__text {
+        margin-top: 20px;
+        text-transform: uppercase;
+        color: $color_black;
+    }
+    &__text-white {
+        font-size: 22px;
+        font-weight: 300;
+        color: $color_white;
+        letter-spacing: 4.4px;
+        margin-top: 38px;
+        line-height: 40px;
+    }
+    &__author {
+        font-size: 22px;
+        text-transform: uppercase;
+        color: $color_white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 36px;
+        & span {
+            margin-left: 20px;
+        }
+    }
+    &__img1 {
+        margin-top: 40px;
+    }
+    &__img2 {
+        margin-top: 73px;
+    }
+    &__img3 {
+        margin-top: 47px;
+    }
+    &__img5 {
+        margin-top: 40px;
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 30px;
+        background-color: #f1f1f1;
+    }
+    &__price {
+        color: $color_black;
+    }
+    &--big1 {
+        background: url("../img/section-slider_02.jpg");
+        height: 100vh;
+    }
+    &--big2 {
+        background: url("../img/section-slider2_02.jpg");
+        height: 100vh;
+    }
+    &--big3 {
+        background: url("../img/section-slider3_02.jpg");
+        height: 100vh;
+    }
+}
+
+.slick {
+    &-track {
+        display: flex;
+    }
+    &-list {
+        overflow: hidden;
+    }
+    &-arrow {
+        position: absolute;
+        bottom: -60px;
+        z-index: 10;
+        font-size: 0;
+        cursor: pointer;
+        outline: none;
+    }
+    &-prev {
+        right: 52%;
+        width: 40px;
+        height: 20px;
+        border: none;
+        background: center no-repeat url("../img/Left.png");
+        
+    }
+    &-next {
+        left: 52%;
+        width: 40px;
+        height: 20px;
+        border: none;
+        background: center no-repeat url("../img/Right.png");
+        
+    }
+}
+
+.slick-disabled {
+    opacity: 0.2;
+}
+
+.star-light {
+    color: #aab384;
+    margin-top: 100px;
+}
+
+@media (max-width:400px) {
+    .slider__text-white {
+        font-size: 18px;
+    }
+    .star-light {
+        margin-top: 0;
+    }
+}

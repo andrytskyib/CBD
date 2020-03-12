@@ -1,0 +1,119 @@
+.footer {
+    width: 100%;
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__line {
+        width: 370px;
+        height: 2px;
+        background-color: $color_ohra;
+    }
+    &__body {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text {
+        text-transform: uppercase;
+        text-align: center;
+        width: 370px;
+        font-weight: 300;
+        padding-top: 12px;
+        font-size: 14px;
+        letter-spacing: 3.92px;
+        & p + p {
+            margin-top: 28px;
+        }
+        &--adapted {
+            display: none;
+        }
+    }
+    &__ico {
+        text-align: center;
+    }
+    &__ico i+i{
+        margin-left: 60px;
+    }
+    &__vertical-line {
+        height: 55px;
+        width: 2px;
+        background-color: $color_ohra;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    &__text2 {
+        text-transform: uppercase;
+        color: $color_black;
+        margin-top: 29px;
+        text-align: center;
+        letter-spacing: 2.7px;
+    }
+    &__form {
+        width: 370px;
+        display: flex;
+        border: 2px solid #ced6af;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    &__input {
+        width: 280px;
+        border: none;
+        background-color: transparent;
+        font-size: 16px;
+        font-weight: 300;
+        padding: 20px 0 20px 31px;
+    }
+    &__button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        border-left: 2px solid #ced6af;
+        padding: 0 30px;
+        &:hover {
+            background-color: #ced6af;
+        }
+    }
+    &__text3 {
+        font-size: 11px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width:600px) {
+    .footer__body {
+        flex-wrap: wrap;
+    }
+    .footer__text--no-adapted {
+        display: none;
+    }
+    .footer__text {
+        width: 50%;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+    .footer__text--adapted {
+        display: block;
+    }
+    .footer__sub {
+        width: 100%;
+    }
+}
+
+@media (max-width:400px) {
+    .footer__form {
+        width: 300px;
+    }
+    .footer__input {
+        width: 200px;
+    }
+    .footer__button {
+        padding-right: 0;
+        padding-left: 31px;
+    }
+}

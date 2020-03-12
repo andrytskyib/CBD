@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: $color_white;
+    color: $color_ohra;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $color_white;
+}
+.section {
+    width: 100%;
+    &--header {
+        height: 100vh;
+        background: url("../img/cbd_01.jpg");
+        color: $color_white;
+        position: relative;
+    }
+    &--products {
+        background-color: $color_white;
+    }
+    &--slider {
+        position: relative;
+        margin-top: 100px;
+    }
+}
+
+.logo {
+    font-size: 60px;
+}
+
+.section--slider .slick-arrow {
+    bottom: 0;
+}
+
+.section--slider .slick-prev {
+    right: 50%;
+    width: 40px;
+    height: 20px;
+    border: 1px solid #fff;
+    padding: 45px 64px 40px 64px;
+    background: center no-repeat url("../img/Left-white.png");
+}
+
+.section--slider .slick-next {
+    left: 50%;
+    width: 40px;
+    height: 20px;
+    border: 1px solid #fff;
+    padding: 45px 64px 40px 64px;
+    background: center no-repeat url("../img/Right-white.png");
+}
